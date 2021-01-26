@@ -32,6 +32,14 @@ namespace GuidedExperience
             bundles.Add(new ScriptBundle("~/bundles/bootstraptour").Include(
                       "~/BootstrapTour/js/bootstrap-tour-standalone.min.js",
                       "~/BootstrapTour/app/app.js"));
+
+            bundles.Add(new StyleBundle("~/content/Hopscotchcss").Include(
+                     "~/Hopscotch/css/hopscotch.min.css",
+                     "~/Hopscotch/css/flat-ui.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/hopscotch").Include(
+                      "~/Hopscotch/js/hopscotch.js",
+                      "~/Hopscotch/app/hopscotchapp.js"));
         }
     }
 }

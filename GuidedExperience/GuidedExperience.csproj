@@ -144,6 +144,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Hopscotch\app\hopscotchapp.js" />
+    <Content Include="Hopscotch\css\flat-ui.css" />
+    <Content Include="Hopscotch\css\hopscotch.min.css" />
+    <Content Include="Hopscotch\img\sprite-green.png" />
+    <Content Include="Hopscotch\img\sprite-orange.png" />
+    <Content Include="Hopscotch\js\hopscotch.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\GuidedExperience - Web Deploy.pubxml" />
@@ -176,7 +182,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
