@@ -127,6 +127,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BootstrapTour\app\app.js" />
     <Content Include="BootstrapTour\css\bootstrap-tour-standalone.css" />
     <Content Include="BootstrapTour\css\bootstrap-tour-standalone.min.css" />
     <Content Include="BootstrapTour\css\bootstrap-tour.css" />
@@ -175,6 +176,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

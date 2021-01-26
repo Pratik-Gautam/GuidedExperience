@@ -25,6 +25,13 @@ namespace GuidedExperience
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            
+            bundles.Add(new StyleBundle("~/content/bootstraptourcss").Include(
+                      "~/BootstrapTour/css/bootstrap-tour-standalone.min.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstraptour").Include(
+                      "~/BootstrapTour/js/bootstrap-tour-standalone.min.js",
+                      "~/BootstrapTour/app/app.js"));
         }
     }
 }
