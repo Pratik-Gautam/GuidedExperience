@@ -26,6 +26,7 @@ namespace GuidedExperience
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
             
+            // Bootstrap Tour Bundle
             bundles.Add(new StyleBundle("~/content/bootstraptourcss").Include(
                       "~/BootstrapTour/css/bootstrap-tour-standalone.min.css"));
 
@@ -33,6 +34,7 @@ namespace GuidedExperience
                       "~/BootstrapTour/js/bootstrap-tour-standalone.min.js",
                       "~/BootstrapTour/app/app.js"));
 
+            // Hopscotch Bundle
             bundles.Add(new StyleBundle("~/content/Hopscotchcss").Include(
                      "~/Hopscotch/css/hopscotch.min.css",
                      "~/Hopscotch/css/flat-ui.css"));
@@ -40,6 +42,16 @@ namespace GuidedExperience
             bundles.Add(new ScriptBundle("~/bundles/hopscotch").Include(
                       "~/Hopscotch/js/hopscotch.js",
                       "~/Hopscotch/app/hopscotchapp.js"));
+
+            // JoyRide Bundle
+            bundles.Add(new StyleBundle("~/content/joyridecss").Include(
+                    "~/Joyride/css/solo.joyride.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/joyridejquery").Include(
+                      "~/Joyride/js/jquery.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/joyride").Include(
+                      "~/Joyride/js/solo.joyride.js"));
         }
     }
 }

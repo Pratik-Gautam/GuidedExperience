@@ -1,17 +1,57 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "JoyRide Page";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div id="step1" class="jumbotron">
+    <h1>Joyride Sample</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="row">
+    <div id="step2" class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div id="step3" class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+@Styles.Render("~/content/joyridecss")
+@Scripts.Render("~/bundles/joyridejquery")
+@Scripts.Render("~/bundles/joyride")
+<script type="text/javascript">
+    $(document).foundation();
+</script>
+
+<!-- Joyride list -->
+<ol data-joyride data-autostart="true" id="docs-joyride">
+    <li data-target="#step1">
+        <h3>First</h3>
+        <p>This is the default one without settings</p>
+    </li>
+    <li data-target="#step2">
+        <h3>Second</h3>
+        <p>This is the default one without settings</p>
+    </li>
+    <li data-target="#step3">
+        <h3>Fifth</h3>
+        <p>Your ride ends here!</p>
+        <p class="text-center">
+            <button class="button success" data-joyride-close="">OK, thanks!</button>
+        </p>
+    </li>
+</ol>

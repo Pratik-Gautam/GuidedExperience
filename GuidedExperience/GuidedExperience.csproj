@@ -150,8 +150,13 @@
     <Content Include="Hopscotch\img\sprite-green.png" />
     <Content Include="Hopscotch\img\sprite-orange.png" />
     <Content Include="Hopscotch\js\hopscotch.js" />
+    <Content Include="Joyride\app\joyrideapp.js" />
+    <Content Include="Joyride\css\solo.joyride.css" />
+    <Content Include="Joyride\js\jquery.js" />
+    <Content Include="Joyride\js\solo.joyride.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="what-input\what-input.js" />
     <None Include="Properties\PublishProfiles\GuidedExperience - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
