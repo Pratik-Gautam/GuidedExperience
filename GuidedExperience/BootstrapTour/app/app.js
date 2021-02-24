@@ -2,6 +2,8 @@
 var tour = new Tour({
     debug: true,
     orphan: false,
+    backdrop: true,
+    smartPlacement: true,
     storage: window.sessionStorage,
     steps: [
         {
@@ -19,7 +21,7 @@ var tour = new Tour({
         },
         {
             element: "#cars",
-            title: "Steo 3",
+            title: "Step 3",
             placement: "top",
             content: "This is for testing a dropdown highlighting",
             backdrop: true
