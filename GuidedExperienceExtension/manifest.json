@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "GuidedExperience",
+    "version": "1.0", 
+    "description": "Adds guided experience plugin",
+    "icons": {
+      "48": "icons/ms.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["guidedexperience.js"]
+      }
+    ]
+  }
