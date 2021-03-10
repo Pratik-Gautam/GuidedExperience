@@ -52,6 +52,10 @@ namespace GuidedExperience
 
             bundles.Add(new ScriptBundle("~/bundles/joyride").Include(
                       "~/Joyride/js/solo.joyride.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/Selector").Include(
+                      "~/Selector/jquery.dom-outline-1.0.js",
+                      "~/Selector/SelectorCode.js"));
         }
     }
 }

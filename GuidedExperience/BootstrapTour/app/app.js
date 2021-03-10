@@ -5,9 +5,9 @@ var tour = new Tour({
     backdrop: true,
     smartPlacement: true,
     storage: window.sessionStorage,
-    steps: [
+   steps: [
         {
-            element: "#step1",
+            element:  "#step1",
             title: "Step 1",
             placement:"bottom",
             content: "This is the header of this webpage that can help us to understand more details about it"
@@ -25,7 +25,15 @@ var tour = new Tour({
             placement: "top",
             content: "This is for testing a dropdown highlighting",
             backdrop: true
-        }
+       },
+       {
+           element: "a[href='/timesheet']",
+           title: "Step 4",
+           placement: "top",
+           content: "This is the timesheet link",
+           backdrop: true
+       }
+
     ]
 });
 $(document).ready(function () {

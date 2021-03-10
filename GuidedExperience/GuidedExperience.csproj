@@ -156,6 +156,8 @@
     <Content Include="Joyride\js\solo.joyride.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Selector\jquery.dom-outline-1.0.js" />
+    <Content Include="Selector\SelectorCode.js" />
     <Content Include="what-input\what-input.js" />
     <None Include="Properties\PublishProfiles\GuidedExperience - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -183,6 +185,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Selector\LICENSE" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
