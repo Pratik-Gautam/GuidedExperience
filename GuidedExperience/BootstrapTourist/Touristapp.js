@@ -9,7 +9,6 @@ var tour = new Tour({
         {
             element:  "#step1",
             title: "Step 1",
-            prev: 0,
             placement:"bottom",
             content: "This is the header of this webpage that can help us to understand more details about it"
            
@@ -17,14 +16,12 @@ var tour = new Tour({
         {
             element: "#step2",
             title: "Step 2",
-            prev: 0,
             placement: "bottom",
             content: "This is the middle section that can review the various libraries needed for this operation"
         },
         {
             element: "#cars",
             title: "Step 3",
-            prev: 0,
             placement: "top",
             content: "This is for testing a dropdown highlighting",
             backdrop: true
@@ -32,7 +29,6 @@ var tour = new Tour({
        {
            element: "a[href='/timesheet']",
            title: "Step 4",
-           prev: 0,
            placement: "top",
            content: "This is the timesheet link",
            backdrop: true
@@ -41,4 +37,4 @@ var tour = new Tour({
     ]
 });
 
-tour.restart();
+tour.start();

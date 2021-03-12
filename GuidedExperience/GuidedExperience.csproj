@@ -127,6 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BootstrapTourist\Touristapp.js" />
+    <Content Include="BootstrapTourist\bootstrap-tourist.css" />
+    <Content Include="BootstrapTourist\bootstrap-tourist.js" />
     <Content Include="BootstrapTour\app\app.js" />
     <Content Include="BootstrapTour\css\bootstrap-tour-standalone.css" />
     <Content Include="BootstrapTour\css\bootstrap-tour-standalone.min.css" />
