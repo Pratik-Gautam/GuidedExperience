@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Admin Module GuidedExperience",
+    "version": "1.0", 
+    "description": "Generates admin file",
+    "icons": {
+      "48": "icons/ms.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["AdminExtension.js"]
+      }
+    ]
+  }
