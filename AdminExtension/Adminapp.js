@@ -1,10 +1,9 @@
-﻿var template="";
+var template="";
 template += "<div id=\"theroom-info\">";
-template += "  <span id=\"theroom-tag\"><\/span>";
-template += "  <span id=\"theroom-id\"><\/span>";
-template += "  <span id=\"theroom-class\"><\/span>";
+template += "  <span id=\"highlight\">Please hover on the element that you want to add to the guided experience and click to add it!<\/span><br>";
+template += "  <button id=\"btnGenerateFile\" type=\"button\" onclick=\"alert(selectedSteps);\">Generate File</button>";
+template += "  <button id=\"btnClearSelection\" type=\"button\" onclick=\"alert(selectedSteps);\">Clear Selection</button>";
 template += "<\/div>";
-template += "<button type=\"button\">Generate File</button>";
 template += "";
 template += "<style>";
 template += "  #theroom-info {";
@@ -17,20 +16,22 @@ template += "    background-color: #333;";
 template += "    padding: 10px;";
 template += "    color: #fafafa;";
 template += "    text-align: center;";
+template += "    z-index: -1;";
 template += "    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);";
 template += "  }";
 template += "";
-template += "  #theroom-tag {";
-template += "    color: #C2185B;";
+template += "  #highlight {";
+template += "    color: #FFFF00;";
 template += "  }";
-template += "";
-template += "  #theroom-id {";
-template += "    color: #5D4037;";
+template += "  #btnGenerateFile {";
+template += "    background-color: #4CAF50;";
+template += "    z-index: 2147483647;";
 template += "  }";
-template += "";
-template += "  #theroom-class {";
-template += "    color: #607D8B;";
+template += "  #btnClearSelection {";
+template += "    background-color: #4CAF50;";
+template += "    z-index: 2147483647;";
 template += "  }";
+
 template += "<\/style>";
 
 var options = {
@@ -40,4 +41,3 @@ var options = {
 
 // initialize
 theRoom.start(options);
-
