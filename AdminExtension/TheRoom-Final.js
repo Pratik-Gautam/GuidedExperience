@@ -14,7 +14,7 @@ var selectedSteps=[];
             onStop: null,
             onStopping: null,
             onClick: null,
-            exceptions: ["head", "meta", "link", "style", "title", "script","#btnGenerateFile","#btnClearSelection"]
+            exceptions: ["head", "meta", "link", "style", "title", "script","button#btnClearSelection","button#btnGenerateFile","div#theroom","div#theroom-info"]
         };
         var utils = (function() {
             var objectToCss = function(obj) {
@@ -51,7 +51,7 @@ var selectedSteps=[];
                 "width": (width || 0) + "px",
                 "height": (height || 0) + "px",
                 "pointer-events": "none",
-                "z-index": "2147483600",
+                "z-index": "2147483647",
                 "background-color": options.bgcolor
             };
             var styles = utils.objectToCss(_styles);
@@ -118,16 +118,7 @@ var selectedSteps=[];
                 var top = Math.max(0, pos.top + scrollTop);
                 var left = pos.left;
                 var inspectorStyles = prepareInspectorStyles(top, left, width, height).replace(/(\{|\})/g, "");
-                options.inspector.setAttribute("style", inspectorStyles);
-                if (typeof options.showInfo === "boolean" && options.showInfo) {
-                    var detailsEl = options.inspector.querySelector("#" + options.namespace + "-info");
-                    if (detailsEl) {
-                        detailsEl.querySelector("#" + options.namespace + "-tag").innerText = target.tagName;
-                        detailsEl.querySelector("#" + options.namespace + "-id").innerText = (target.id ? ("#" + target.id) : "");
-                        detailsEl.querySelector("#" + options.namespace + "-class").innerText = (target.className ? ("." + target.className.split(/\s+/).join(".")) : "");
-                    }
-                }
-                
+                options.inspector.setAttribute("style", inspectorStyles);             
             }
         };
         var engine = function(type) {
