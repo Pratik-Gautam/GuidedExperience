@@ -1,4 +1,3 @@
-
 var selectedSteps=[];
 var selectedStepsTemp=[];
 (function(window, document) {
@@ -97,22 +96,19 @@ var selectedStepsTemp=[];
                 }
             }
         };
-
+        
         var eventEmitter = function(event) {
-            var counterCheck=0;
             var target = event.target;
             if (target.id === options.namespace)
                 return;
             switch (event.type) {
             case "click":
-                var output=dompath(this).toCSS();
-                if(counterCheck==0)
+                if(this===target)
                 {
+                    var output=dompath(this).toCSS();
                     console.log(output);
-                    window.selectedSteps.push(output);
-                    counterCheck++;
-                 }
-                break;
+                }
+                return;
             case "mouseover":
                 var pos = target.getBoundingClientRect();
                 var scrollTop = window.scrollY || document.documentElement.scrollTop;
