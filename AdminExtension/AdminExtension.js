@@ -1,4 +1,3 @@
-document.body.style.border = "5px solid red";
 
 
 var theRoom_reference = document.createElement('script');
