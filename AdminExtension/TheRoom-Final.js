@@ -1,5 +1,4 @@
 var selectedSteps=[];
-var selectedStepsTemp=[];
 (function(window, document) {
     window.theRoom = (function(window, document) {
         var options = {
@@ -15,7 +14,7 @@ var selectedStepsTemp=[];
             onStop: null,
             onStopping: null,
             onClick: null,
-            exceptions: ["head", "meta", "link", "style", "title", "script"]
+            exceptions: ["head", "meta", "link", "style", "title", "script","#btnGenerateFile","#btnClearSelection"]
         };
         var utils = (function() {
             var objectToCss = function(obj) {
@@ -52,7 +51,7 @@ var selectedStepsTemp=[];
                 "width": (width || 0) + "px",
                 "height": (height || 0) + "px",
                 "pointer-events": "none",
-                "z-index": "2147483647",
+                "z-index": "2147483600",
                 "background-color": options.bgcolor
             };
             var styles = utils.objectToCss(_styles);
@@ -105,8 +104,10 @@ var selectedStepsTemp=[];
             case "click":
                 if(this===target)
                 {
-                    var output=dompath(this).toCSS();
-                    console.log(output);
+                    var selectedElement=dompath(this).toCSS();
+                    selectedSteps.push(selectedElement);
+                    alert("Item added!");
+                    console.log(selectedElement);
                 }
                 return;
             case "mouseover":
