@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidedExperience", "GuidedE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLAgilityPackSample", "HTMLAgilityPackSample\HTMLAgilityPackSample.csproj", "{A89A7F8D-E078-494F-BA69-23FAA4852AA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidedExperienceAPI", "GuidedExperienceAPI\GuidedExperienceAPI.csproj", "{F5A66740-8C70-4C95-B613-4B57C39EECAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A89A7F8D-E078-494F-BA69-23FAA4852AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A89A7F8D-E078-494F-BA69-23FAA4852AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A89A7F8D-E078-494F-BA69-23FAA4852AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A66740-8C70-4C95-B613-4B57C39EECAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A66740-8C70-4C95-B613-4B57C39EECAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A66740-8C70-4C95-B613-4B57C39EECAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A66740-8C70-4C95-B613-4B57C39EECAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
