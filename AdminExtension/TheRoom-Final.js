@@ -34,8 +34,8 @@ var selectedSteps=[];
                 objectToCss: objectToCss
             };
         }
-        )();
-        
+        )();  
+
         var getInspector = function() {
             if (!options.inspector) {
                 options.inspector = createInspector();
@@ -103,11 +103,11 @@ var selectedSteps=[];
             switch (event.type) {
             case "click":
                 if(this===target)
-                {
-                    var selectedElement=dompath(this).toCSS();
-                    selectedSteps.push(selectedElement);
+                {   
+                    var selectedPath=dompath(this).toCSS();
+                    selectedSteps.push(selectedPath);
                     alert("Item added!");
-                    console.log(selectedElement);
+                    console.log(selectedPath);
                 }
                 return;
             case "mouseover":
