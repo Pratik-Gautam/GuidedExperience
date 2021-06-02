@@ -1,8 +1,8 @@
 var template="";
 template += "<div id=\"theroom-info\">";
 template += "  <span id=\"highlight\">Please hover on the element that you want to add to the guided experience and click to add it!<\/span><br>";
-template += "  <button class=\"exclusion\" id=\"btnGenerateFile\" type=\"button\" onclick=\"alert('Hi');\">Generate File</button>";
-template += "  <button class=\"exclusion\" id=\"btnClearSelection\" type=\"button\" onclick=\"alert('Hi');\">Clear Selection</button>";
+template += "  <button class=\"exclusion\" id=\"btnGenerateFile\" type=\"button\" onclick=\"CallProcessorApi();\">Generate File</button>";
+template += "  <button class=\"exclusion\" id=\"btnClearSelection\" type=\"button\" onclick=\"ClearArray();\">Clear Selection</button>";
 template += "<\/div>";
 template += "";
 template += "<style>";
@@ -36,6 +36,26 @@ var options = {
   template: template,
   showInfo: true
 };
+
+var ClearArray=function(){
+  selectedSteps=[];
+  alert('selection cleared!');
+} 
+
+const serviceUrl="https://guidedexperienceapi.azurewebsites.net/api/GuideFileGen";
+
+var CallProcessorApi=function(){
+  var xhr=new XMLHttpRequest();
+  xhr.open("POST",serviceUrl);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.onreadystatechange = function() { // Call a function when the state changes.
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+        alert('request successful!');
+    }
+}
+
+xhr.send(JSON.stringify(selectedSteps));
+}
 
 // initialize
 theRoom.start(options);
