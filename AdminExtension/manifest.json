@@ -2,9 +2,23 @@
     "manifest_version": 2,
     "name": "Admin Module GuidedExperience",
     "version": "1.0", 
-    "description": "Generates admin file",
+    "description": "This extension generates and uploads an admin guide experience file",
+    "homepage_url": "https://github.com/Pratik-Gautam/GuidedExperience/tree/master/AdminExtension",
     "icons": {
       "48": "icons/ms.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icons/ms.png",
+      "theme_icons": [{
+          "light": "icons/ms.png",
+          "dark": "icons/ms.png",
+          "size": 48
+      }],
+      "default_title": "AdminModuleGuidedExperience",
+      "default_popup": "popup/prepareGuideFile.html"
     },
     "content_scripts": [
       {
