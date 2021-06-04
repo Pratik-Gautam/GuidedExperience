@@ -42,7 +42,7 @@ var ClearArray=function(){
   alert('selection cleared!');
 } 
 
-const serviceUrl="https://guidedexperienceapi.azurewebsites.net/api/GuideFileGen";
+const serviceUrl="<web api url>/api/GuideFileGen";
 
 var CallProcessorApi=function(){
   var xhr=new XMLHttpRequest();
